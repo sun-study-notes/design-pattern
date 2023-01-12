@@ -5,4 +5,16 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+# oop_design_rule
+[[bin]]
+name = "01srp"
+path = "src/oop_design_rule/01srp.rs"
+[[bin]]
+name = "02ocp"
+path = "src/oop_design_rule/02ocp.rs"
+
+[[bin]]
+name = "03dip"
+path = "src/oop_design_rule/03dip.rs"
+
 [dependencies]
