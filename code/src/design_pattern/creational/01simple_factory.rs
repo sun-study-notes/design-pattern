@@ -17,17 +17,21 @@ impl Fruit for Banner {
     }
 }
 
+enum FruitT {
+    Apple,
+    Banner,
+}
 struct Factory {}
 impl Factory {
-    fn create(name: String) -> Box<dyn Fruit> {
-        let _apple = "apple".to_string();
+    fn create(name: FruitT) -> Box<dyn Fruit> {
         match name {
-            _apple => Box::new(Apple {}),
-            _ => Box::new(Apple {}),
+            FruitT::Apple => Box::new(Apple {}),
+            FruitT::Banner => Box::new(Banner {}),
         }
     }
 }
 
 fn main() {
-    Factory::create("apple".to_string()).show();
+    Factory::create(FruitT::Apple).show();
+    Factory::create(FruitT::Banner).show();
 }
