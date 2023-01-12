@@ -19,11 +19,15 @@ impl Fruit for Banner {
 
 struct Factory {}
 impl Factory {
-    fn create<T: Fruit>(name: &str) -> T {
+    fn create(name: String) -> Box<dyn Fruit> {
+        let _apple = "apple".to_string();
         match name {
-            "apple" => Apple{},
+            _apple => Box::new(Apple {}),
+            _ => Box::new(Apple {}),
         }
     }
 }
 
-fn main() {}
+fn main() {
+    Factory::create("apple".to_string()).show();
+}
