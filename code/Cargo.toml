@@ -12,9 +12,17 @@ path = "src/oop_design_rule/01srp.rs"
 [[bin]]
 name = "02ocp"
 path = "src/oop_design_rule/02ocp.rs"
-
 [[bin]]
 name = "03dip"
 path = "src/oop_design_rule/03dip.rs"
+[[bin]]
+name = "04crp"
+path = "src/oop_design_rule/04crp.rs"
+# design_pattern
+
+# creational
+[[bin]]
+name = "01simple_factory"
+path = "src/design_pattern/creational/01simple_factory.rs"
 
 [dependencies]
