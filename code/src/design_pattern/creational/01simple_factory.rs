@@ -19,8 +19,10 @@ impl Fruit for Banner {
 
 struct Factory {}
 impl Factory {
-    fn create<T: Fruit>(&self, name: String) -> T {
-        
+    fn create<T: Fruit>(name: &str) -> T {
+        match name {
+            "apple" => Apple{},
+        }
     }
 }
 
