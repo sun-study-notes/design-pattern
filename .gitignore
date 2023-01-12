@@ -1,0 +1,11 @@
+.DS_Store
+.idea/
+.vscode/
+target/
+*.code-workspace
+
+*/logs/*
+
+volo_version_update/*
+# 在上一条屏蔽规则的条件下, 不屏蔽仓库根目录下的某个文件
+!volo_version_update/Makefile
