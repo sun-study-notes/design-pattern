@@ -25,4 +25,11 @@ path = "src/oop_design_rule/04crp.rs"
 name = "01simple_factory"
 path = "src/design_pattern/creational/01simple_factory.rs"
 
+[[bin]]
+name = "02factory_method"
+path = "src/design_pattern/creational/02factory_method.rs"
+[[bin]]
+name = "03abstract_factory_method"
+path = "src/design_pattern/creational/03abstract_factory_method.rs"
+
 [dependencies]

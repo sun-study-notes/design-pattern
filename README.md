@@ -1,6 +1,5 @@
 # design-pattern
 https://rust-unofficial.github.io/patterns/intro.html
-https://github.com/arkada38/Rust-Design-Patterns
 
 https://github.com/Binbiubiubiu/design-pattern-in-rust
 https://github.com/senghoo/golang-design-pattern
